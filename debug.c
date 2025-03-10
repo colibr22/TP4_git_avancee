@@ -1,5 +1,12 @@
 #include "debug.h"
 
+struct Cell *newCell(int value){
+  struct Cell *p=malloc(sizeof(p)); 
+  if (p==NULL) exit(2);             
+  p->value=value;
+  return p;
+}
+
 void sortInsert(struct Cell **head, struct Cell *cell){
   if (*head==NULL){
     *head=cell;
