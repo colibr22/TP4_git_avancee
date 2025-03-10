@@ -9,5 +9,4 @@ struct Cell {
     struct Cell *next;
 };
 
-
 #endif
