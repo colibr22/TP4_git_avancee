@@ -1,13 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include <malloc.h>
-
-
-// je fais des changements
-struct Cell {
-  int value;
-  struct Cell *next;
-};
+#include "debug.h"
 
 struct Cell *newCell(int value){
   struct Cell *p=malloc(sizeof(struct Cell)); // je corrige un bug 
