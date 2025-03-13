@@ -39,3 +39,4 @@ void printList(struct Cell *list){
     printList(list); 
   } 
 }
+
